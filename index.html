@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+   
+    <div id="calculatorContainer">
+        <div id="resultDisplay">
+            <input type="text" id="recentOperation" disabled>
+            <input type="text" id="result" value="0" disabled>
+        </div>
+        <div id="calculatorButtons">
+            <div id="firstRow">
+                <button class="operator" id="C">C</button>
+                <button class="operator" id="plusMinus">+/-</button>
+                <button class="operator" id="power">^</button>
+                <button class="operator" id="division">/</button>
+            </div>
+            <div id="secondRow">
+                <button class="number" id="seven">7</button>
+                <button class="number" id="eight">8</button>
+                <button class="number" id="nine">9</button>
+                <button class="operator" id="multiplication">x</button>
+            </div>
+            <div id="thirdRow">
+                <button class="number" id="four">4</button>
+                <button class="number" id="five">5</button>
+                <button class="number" id="six">6</button>
+                <button class="operator" id="subtraction">-</button>
+            </div>
+            <div id="fourthRow">
+                <button class="number" id="one">1</button>
+                <button class="number" id="two">2</button>
+                <button class="number" id="three">3</button>
+                <button class="operator" id="addition">+</button>
+            </div>
+            <div id="fifthRow">
+                <button class="operator" id="clerAll">CA</button>
+                <button class="number" id="zero">0</button>
+                <button class="number" id="dot">.</button>
+                <button class="operator" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <div id="historyContainerParent">
+        <h2>History</h2>
+        <button id="clearHistory">Clear history</button>
+        <div id="historyContainer"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
